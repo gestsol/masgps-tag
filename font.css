@@ -1,0 +1,19 @@
+@font-face {
+    font-family: SF Pro Rounded;
+    src: url(fonts/SFProDisplay-Regular.ttf);
+}
+
+@font-face {
+    font-family: SF Pro Rounded, Bold;
+    src: url(fonts/SFProDisplay-Bold.ttf);
+}
+
+@font-face {
+    font-family: SF Pro Display, Heavy;
+    src: url(fonts/SFProDisplay-Heavy.ttf);
+}
+
+@font-face {
+    font-family: SF Pro Display, Light;
+    src: url(fonts/SFProDisplay-Light.ttf)
+}

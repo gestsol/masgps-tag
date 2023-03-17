@@ -2,7 +2,7 @@
 
 
 
-$sql2="SELECT * FROM `hoario` WHERE `id-portico`='$portico' and `dia`='$dia'";  // consulta la tarifa del portico por el dia de uso
+$sql2="SELECT * FROM `hoario` WHERE `id_portico`='$portico' and `dia`='$dia'";  // consulta la tarifa del portico por el dia de uso
 
 
 $query2  = mysqli_query($mysqli, $sql2);
@@ -55,11 +55,11 @@ $valor=$row['valor'];
 $detalle=$row['descripcion'];
 
 $update="UPDATE `eventos` SET `tarifa` = '$tarifa', `valor`=$valor , `detalles`='$detalle' WHERE `eventos`.`id` = $id "; // realiza el update del valor y tarifa del evento
-
+echo "<br>";
 mysqli_query($mysqli, $update);  
 
 
-echo "<br>";
+
 
 echo "  El dia $fecha ($dia) y hora $hora y vehiculo  $patente , categoria '$categoria' y portico '$portico'  ($detalle) tiene un valor de $ $valor que corresponde a la tarifa '$tarifa' ";
 

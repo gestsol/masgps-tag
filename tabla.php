@@ -77,7 +77,7 @@ ob_start();
 
                 include "./model/conexion.php";
 
-                $sql = " select * from eventos";
+                $sql = " select * from eventos order by patente desc";
                 $total = 0;
                 $query  = mysqli_query($mysqli, $sql);
 

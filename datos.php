@@ -59,7 +59,7 @@
                 <tr>
                     <th>Patente</th>
                     <th>Tarifa</th>
-                    <th>Historial</th>
+                    <th>Fecha y Hora</th>
                     <th>Autopista</th>
                     <th>Pórticos</th>
                     <th>Monto total</th>
@@ -109,12 +109,14 @@
                             $valor=$row['valor'];
                             $detalle=$row['detalles'];
                             $tarifa=$row['tarifa'];
+                            $tarifa=$row['tarifa'];
+                            $hora=$row['hora'];
                             $total=$total + $valor;
                             
                             echo"<tr>";
                             echo "<td>$pat</td>";
                             echo "<td>$tarifa</td>";
-                            echo"<td>$fecha</td>";
+                            echo"<td>$fecha - $hora</td>";
                             echo"<td>$autopista</td>";
                             echo"<td>$detalle</td>";
                             echo"<td>$ $valor</td>";

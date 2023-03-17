@@ -2,7 +2,7 @@
 
 
 
-$sql2="SELECT * FROM `horario` WHERE `id-portico`='$portico' and `dia`='$dia'";  // consulta la tarifa del portico por el dia de uso
+$sql2="SELECT * FROM `hoario` WHERE `id-portico`='$portico' and `dia`='$dia'";  // consulta la tarifa del portico por el dia de uso
 
 
 $query2  = mysqli_query($mysqli, $sql2);
